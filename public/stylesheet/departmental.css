@@ -2,25 +2,25 @@ body{
     background:#f1f1f1;
 }
 
+
 .disappear{
-    display:none;
+    display:block;
+    height:0;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+.card, .card-body{
+    height:100%;
+    transition: 0.3s ease;}
+.card{
+    display:block;
+    width:18rem;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
-.non-disappear{
-    display:block;
-}
 .card:hover{
     border:1px solid black;
-}
-
-@media(max-width:800px){
-    
-    .card{
-        margin-left:17%;
-        margin-top:7%;
-        margin-right:7%;
-        margin-bottom:7%;
-    }
 }
 
 .myDiv {
