@@ -1,15 +1,18 @@
+*{
+  font-family: Raleway;
+}
 body {
   background: #f1f1f1;
 }
 
 #GS1 {
   margin-left: 30%;
-  font-family: "Abel", sans-serif;
+  
 }
 
 #GS2 {
   margin-left: 30%;
-  font-family: "Abel", sans-serif;
+  
 }
 
 iframe {
@@ -50,14 +53,14 @@ iframe {
 }
 .navbar-dark .navbar-brand {
   
-  color: #ffb5b5;
+  color: #f8e8e8;
   text-shadow: 6px 6px 8px black;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #ffb5b5;
+  color: #fcf0f0;
   text-shadow: 6px 6px 8px black;
   font-weight: bold;
   font-size: 1.1rem;
@@ -100,16 +103,13 @@ iframe {
 
 #aboutus {
   color: #537d91;
-  font-family: "Chilanka", cursive;
 }
 
 #team {
   color: #537d91;
-  font-family: "Chilanka", cursive;
 }
 #visittag {
   color: #537d91;
-  font-family: "Chilanka", cursive;
 }
 
 #info {
