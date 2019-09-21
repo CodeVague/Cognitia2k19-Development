@@ -134,7 +134,7 @@ iframe {
   border-left: 5px solid green;
   text-align : center;
   padding-bottom: 2%;
-  padding-left: 3%;
+  padding-left: 2rem;
   font-family: "Rajdhani", sans-serif;
 }
 .wrapper{
@@ -147,7 +147,8 @@ iframe {
 
 @media screen and (max-width:800px){
   .wrapper{
-    width:90%;
+    margin:0;
+    width:100%;
   }
 }
 #GS1 {
@@ -165,12 +166,12 @@ iframe {
 
 #contactus {
   border-right: 5px solid orange;
-  margin-right:2%;
+  margin-right:1px;
 }
 
 #visitus {
   border-left: 5px solid green;
-   margin-left:2%;
+  margin-left:1px;
 }
 
 .socials .fa {
@@ -189,9 +190,11 @@ iframe {
   font-weight: bolder;
   color: white;
 }
+
 #main-text{
-  height:40vh;
+  height:30vh;
 }
+
 
 .fa-facebook {
   background: #3b5998;
@@ -233,6 +236,7 @@ iframe {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
+
 @media (max-width: 800px) {
   #main-text {
     padding-top: 3rem;
@@ -257,6 +261,8 @@ iframe {
   }
 
   #info {
+    
+  margin-left:2px;
     font-size: 1.1rem;
   }
    #main-text {
