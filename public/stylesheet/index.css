@@ -5,15 +5,6 @@ body {
   background: #f1f1f1;
 }
 
-#GS1 {
-  margin-left: 30%;
-  
-}
-
-#GS2 {
-  margin-left: 30%;
-  
-}
 
 iframe {
   margin-left: 15%;
@@ -66,8 +57,12 @@ iframe {
   font-size: 1.1rem;
 }
 
-#heading {
-  
+#heading,#tagline {
+  display:block;
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
   color: white;
   background: linear-gradient(to right,red 0%, orange 50%,yellow 100%);
   background-clip: border-box;
@@ -75,10 +70,28 @@ iframe {
   -webkit-text-fill-color: transparent;
 }
 /* -------------------------------------------------------- */
-#story{
-  margin-left:13%;
-  margin-top:5%;
+.story-wrap{
+ display:flex;
+ flex-direction: row;
+ width:90%;
+ margin: 0 auto; 
+ margin-top:3rem;
+ justify-content: center;
 }
+.story-item{
+  display: block;
+  width:30%;
+}
+.story-item p{
+  text-align:center;
+}
+@media screen and (max-width:800px){
+  .story-wrap{
+    display:none;
+  }
+}
+
+
 .value{
   font-size:3rem;
   color:whitesmoke;
@@ -92,9 +105,7 @@ iframe {
   line-height:0;
 }
 /*----------------------------------------------------------------- */
-#main-text {
-  padding-top: 6%;
-}
+
 
 #tagline {
   color: #fec771;
@@ -113,13 +124,34 @@ iframe {
 }
 
 #info {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   border-left: 5px solid green;
+  text-align : center;
   padding-bottom: 2%;
   padding-left: 3%;
   font-family: "Rajdhani", sans-serif;
 }
+.wrapper{
+  display:block;
+  margin:0 auto;
+  width: 70%;
+}
 
+
+
+@media screen and (max-width:800px){
+  .wrapper{
+    width:90%;
+  }
+}
+#GS1 {
+  display:block;
+  margin: 0 auto;
+}
+#GS2 {
+  display:block;
+  margin: 0 auto;
+}
 #firstLetter {
   font-size: 3.5rem;
   font-weight: bold;
@@ -150,6 +182,9 @@ iframe {
   opacity: 0.9;
   font-weight: bolder;
   color: white;
+}
+#main-text{
+  height:40vh;
 }
 
 .fa-facebook {
@@ -192,22 +227,22 @@ iframe {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   #main-text {
-    padding-top: 60%;
+    padding-top: 3rem;
   }
   .display-1 {
     font-size: 3.5rem;
   }
+  .display-3 {
+    font-size: 3rem;
+  }
+  .card-img-top{
+    height:40vh;
+  }
 }
 
 @media (max-width: 500px) {
-  #GS1 {
-    margin-left: 15%;
-  }
-  #GS2 {
-    margin-left: 15%;
-  }
   iframe {
     margin-left: 10%;
     width: 90%;
@@ -218,9 +253,8 @@ iframe {
   #info {
     font-size: 1.1rem;
   }
- 
    #main-text {
-    padding-top: 24%;
+    padding-top: 0.2rem;
   }
 
    #story{
