@@ -245,3 +245,11 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
+.logo{
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+  padding-left:6px;
+  margin-right:10px;
+}
